@@ -49,7 +49,7 @@ class Source:
 
     def fetch(self):
         s = requests.Session()
-        r = s.get(
+        r = s.post(
             self._url,
             params={"recordID": self._recordID},
             headers=HEADERS,
